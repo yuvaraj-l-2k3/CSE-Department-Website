@@ -1,6 +1,6 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Fetch news data from the JSON file
-        fetch('/json/news.json')
+        fetch('/cse/news.json')
             .then(response => response.json())
             .then(newsData => {
                 // Get the container element where news items will be added
@@ -75,7 +75,7 @@
 
     async function fetchFacultyData() {
         try {
-            const response = await fetch('/json/faculty.json'); // Assuming JSON file name is faculty.json
+            const response = await fetch('/cse/faculty.json'); // Assuming JSON file name is faculty.json
             const facultyData = await response.json(); // Parse JSON response
 
             const facultyContainer = document.getElementById('facultyContainer');
