@@ -456,7 +456,7 @@ async function performSearch() {
     }
 
     try {
-        const response = await fetch('/json/facultyData.json');
+        const response = await fetch('facultyData.json');
         const data = await response.json();
         const results = data.filter(item => Object.values(item).some(value => value.toLowerCase().includes(searchInput.toLowerCase())));
 
