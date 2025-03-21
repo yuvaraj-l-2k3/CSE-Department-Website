@@ -1376,7 +1376,10 @@ footer{
 .footer-social i:hover{
     color: var(--text);
 }
-
+.developer-details,.developer-details p{
+    background-color: var(--bg-color-dark);
+    margin-bottom: 0px;
+}
 .developer-details p a,.developer-details p i:hover{
     cursor: pointer;
     color: var(--primary-color);
