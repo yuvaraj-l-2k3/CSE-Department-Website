@@ -1783,8 +1783,13 @@ footer{
     #read-about{
         display: none;
     }
+
+    .developer-details{
+        background-color: var(--bg-color-dark);
+    }
     .developer-details p{
-        font-size:14px;
+        font-size:10px;
+        margin-bottom: 0px;
 
     }
 }
