@@ -1376,6 +1376,13 @@ footer{
 .footer-social i:hover{
     color: var(--text);
 }
+
+.developer-details p a,.developer-details p i:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+
 @media (max-width:1600px){
     .logo{
         left: 5px !important;
