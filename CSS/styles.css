@@ -1780,6 +1780,10 @@ footer{
     #read-about{
         display: none;
     }
+    .developer-details p{
+        font-size:14px;
+
+    }
 }
 
 
