@@ -456,7 +456,7 @@ async function performSearch() {
     }
 
     try {
-        const response = await fetch('.facultyData.json');
+        const response = await fetch('..Json\facultyData.json');
         const data = await response.json();
         const results = data.filter(item => Object.values(item).some(value => value.toLowerCase().includes(searchInput.toLowerCase())));
 
@@ -486,3 +486,25 @@ function isValidURL(string) {
 function closeSearchPopup() {
     document.getElementById('searchPopup').style.display = 'none';
 }
+
+
+
+// Sending Message
+
+document.getElementById('contact-form-45').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var number=document.getElementById('number').value;
+    var message = document.getElementById('message').value;
+    
+    var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
+    var subject = 'Feedback from ' + name;
+    var body = 'Name: ' + name +"\n" ;
+    body += 'Email: ' + email + "\n";   
+    body += 'Number: ' + number + "\n";   
+    body += 'Message:\r\n' + message;
+    
+    window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});

@@ -123,24 +123,26 @@
                         </ul>
                         <ul>
                             <li>UG Syllabus</li>
-                            <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-CSE.pdf">CSE</a></li>
-                            <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-AIDS.pdf">AI & DS</a></li>
-                            <li><a href="/pdf/syllabus/UG/UG-IT.pdf">IT</a></li>
+                            <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-CSE.pdf"><abbr title="Computer Science and Engineering">CSE</abbr></a></li>
+                            <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-AIDS.pdf"><abbr title="Artificial Intelligence and Data Science">AI & DS</abbr></a></li>
+                            <li><a href="/pdf/syllabus/UG/UG-IT.pdf"><abbr title="Information Technology">IT</abbr></a></li>
                         </ul>
                         <ul>
                             <li>PG Syllabus</li>
-                            <li><a href="/pdf/syllabus/PG/PG-CSE.pdf">CSE</a></li>
-                            <li><a href="#">AI & DS</a></li>
-                            <li><a href="/pdf/syllabus/PG/PG-IT.pdf">IT</a></li>
+                            <li><a href="/pdf/syllabus/PG/PG-CSE.pdf"><abbr title="Computer Science and Engineering">CSE</abbr></a></li>
+                            <li><a href="#"><abbr title="Artificial Intelligence and Data Science">AI & DS</abbr></a></li>
+                            <li><a href="/pdf/syllabus/PG/PG-IT.pdf"><abbr title="Information Technology">IT</abbr></a></li>
+                            <li><a href="#"><abbr title="Biometrics and Cyber Security">BCS</abbr></a></li>
                         </ul>
                         <ul>
                             <li>Career Services</li>
-                            <li><a href="#">Teaching Learning Centre</a></li>
-                            <li><a href="#">Talent Transformation Cell</a></li>
+                            <li><a href="#">Research and Innovation Cell</a></li>
                             <li><a href="#">Placement & Training Cell</a></li>
-                            <li><a href="#">Life@G.K.M CET</a></li>
-                            <li><a href="#">Industry 4.0 Centre</a></li>
-                            <li><a href="#">Campus Facilities</a></li>
+                            <li><a href="#">Career Development Cell</a></li>
+                            <li><a href="#">Entrepreneurship Development Cell</a></li>
+                            <li><a href="#">GKM Alumini Cell</a></li>
+                            <li><a href="#">Saaral Tamizh Mandram</a></li>
+                            <li><a href="#">NSS & YRC</a></li>
                         </ul>
                     </ul>
                 </li>
@@ -245,27 +247,29 @@
                         </li>
                         <li><strong>UG Syllabus</strong>
                             <ul class="sub-dropdowns">
-                                <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-CSE.pdf">CSE</a></li>
-                                <li><a href="/pdf/syllabus/UG/UG-AIDS.pdf">AI & DS</a></li>
-                                <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-IT.pdf">IT</a></li>
+                                <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-CSE.pdf"><abbr title="Computer Science and Engineering">CSE</abbr></a></li>
+                                <li><a href="/pdf/syllabus/UG/UG-AIDS.pdf"><abbr title="Artificial Intelligence and Data Science">AI & DS</abbr></a></li>
+                                <li class="d-flex flex-row"><a href="/pdf/syllabus/UG/UG-IT.pdf"><abbr title="Information Technology">IT</abbr></a></li>
                             </ul>
 
                         </li>
                         <li><strong>PG Syllabus</strong>
                             <ul class="sub-dropdowns">
-                                <li><a href="/">CSE</a></li>
-                                <li><a href="#">AI & DS</a></li>
-                                <li><a href="/pdf/syllabus/PG/PG-IT.pdf">IT</a></li>
+                                <li><a href="/"><abbr title="Computer Science and Engineering">CSE</abbr></a></li>
+                                <li><a href="#"><abbr title="Artificial Intelligence and Data Science">AI & DS</abbr></a></li>
+                                <li><a href="/pdf/syllabus/PG/PG-IT.pdf"><abbr title="Information Technology">IT</abbr></a></li>
+                                <li><a href="#"><abbr title="Biometrics and Cyber security">BCS</abbr></a></li>
                             </ul>
                         </li>
                         <li><strong>Career Services</strong>
                             <ul class="sub-dropdowns">
-                                <li><a href="#">Teaching Learning Centre</a></li>
-                                <li><a href="#">Talent Transformation Cell</a></li>
+                                <li><a href="#">Research and Innovation Cell</a></li>
                                 <li><a href="#">Placement & Training Cell</a></li>
-                                <li><a href="#">Life@GKM</a></li>
-                                <li><a href="#">Industry 4.0 Centre</a></li>
-                                <li><a href="#">Campus Facilities</a></li>
+                                <li><a href="#">Career Development Cell</a></li>
+                                <li><a href="#">Entrepreneurship Development Cell</a></li>
+                                <li><a href="#">GKM Alumini Cell</a></li>
+                                <li><a href="#">Saaral Tamizh Mandram</a></li>
+                                <li><a href="#">NSS & YRC</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -393,7 +397,10 @@
                             <button id="addAnnouncementButton">Add Announcement</button>
                             <button id="saveAnnouncementsButton">Save Announcements</button>
                         </div>
+
                     </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -574,33 +581,39 @@
     </div>
     <div class="comment-form" id="contact-us-section">
             <h2 class="text-center p-2">Have A Question? Leave Your Doubt Here</h2>
+        <form id="contact-form-45">
             <div class="rotating-border">
                 <div class="contact-form" action="">
                     <div id="input-field">
                         <label for="firstmame"> Name<span style="color: #ff0000; font-size: medium;">*</span></label>
-                        <input type="text" required>
+                        <input type="text" id="name" required>
                     </div>
-                    <div id="input-field">
-                        <label for="phone">Phone Number<span style="color: #ff0000; font-size: medium;">*</span></label>
-                        <input type="tel" required>
-                    </div>
+
                     <div id="input-field">
                         <label for="email">Email (Optional)</label>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                     </div>
+
+                    <div id="input-field">
+                        <label for="phone">Phone Number<span style="color: #ff0000; font-size: medium;">*</span></label>
+                        <input type="tel" id="number" required>
+                    </div>
+
                     <div class="message" id="input-field">
                         <label for="user-message">Write your Message<span style="color: #ff0000; font-size: medium;">*</span></label>
-                        <textarea required></textarea>
+                        <textarea id="message" required></textarea>
                     </div>
+
                     <button class="submit">Submit</button>
                 </div>
             </div>
+        </form>
     </div>
     <canvas id="particleCanvas"></canvas>
     <div class="overlay"></div>
-    <script src="/app.js"></script>
+    <script src="./script/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+    <script src="./script/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const homeLink = document.getElementById('home-link');
@@ -838,7 +851,7 @@
             let newsData = [];
             let autoScrollInterval;
             // Fetch news data from JSON file
-            fetch("news.json")
+            fetch("./Json/news.json")
                 .then(response => response.json())
                 .then(data => {
                     newsData = data;

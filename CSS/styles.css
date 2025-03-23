@@ -1378,7 +1378,11 @@ footer{
 }
 .developer-details,.developer-details p{
     background-color: var(--bg-color-dark);
-    margin-bottom: 0px;
+    margin-bottom:0px;
+
+}
+.developer-details p{
+    padding-bottom: 5px;
 }
 .developer-details p a,.developer-details p i:hover{
     cursor: pointer;
@@ -1788,8 +1792,9 @@ footer{
         background-color: var(--bg-color-dark);
     }
     .developer-details p{
-        font-size:10px;
+        font-size:12px;
         margin-bottom: 0px;
+        padding-bottom: 5px;
 
     }
 }

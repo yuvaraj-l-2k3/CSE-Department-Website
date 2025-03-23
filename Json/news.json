@@ -3,37 +3,37 @@
       "date": "April 16, 2024",
       "title": "Breaking News: New Discovery",
       "text": "Lorem ipsum dolor sit amet conit. Tempore, voluptatibus! Fugit eos tempore unde ea debitis similique voluptas obcaecati esse, ullam ut ducimus accusantium cum mollitia, saepe nemo quas voluptate?",
-      "image": "news_image/1.jpeg"
+      "image": "../news_image/1.jpeg"
     },
     {
       "date": "April 17, 2024",
       "title": "Exciting Update: Scientific Breakthrough",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus! Fugit eos tempore unde ea debitis similique voluptas obcaecati esse, , saepe nemo quas voluptate?",
-      "image": "news_image/2.jpeg"
+      "image": "../news_image/2.jpeg"
     },
     {
       "date": "April 18, 2024",
       "title": "New Study Reveals Surprising Results",
       "text": "Researchers uncover unexpected findings that challenge conventional wisdom.",
-      "image": "news_image/3.jpeg"
+      "image": "../news_image/3.jpeg"
     },
     {
       "date": "April 19, 2024",
       "title": "Exclusive Interview: Renowned Scientist Speaks Out",
       "text": "Insightful conversation with a leading expert in the field.",
-      "image": "news_image/4.jpeg"
+      "image": "../news_image/4.jpeg"
     },
     {
       "date": "March 07, 2025",
       "title": "Women's Day Celebration",
       "text": "International Women’s Day is a celebration of the achievements and contributions of women around the globe. It serves as a reminder of the ongoing struggle for gender equality and women’s rights.",
-      "image": "news_image/5.jpeg"
+      "image": "../news_image/5.jpeg"
     },
     {
       "date": "January 10, 2025",
       "title": "Pongal Celebration",
       "text": "Wishing you a prosperous and joyful pongal! May this harvest festival bring abundance and happiness to your life",
-      "image": "news_image/6.jpeg"
+      "image": "../news_image/6.jpeg"
     }
   ]
   
