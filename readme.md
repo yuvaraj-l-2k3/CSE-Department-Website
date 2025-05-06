@@ -35,7 +35,7 @@
    - Academic Programmes
    - Faculties
    - Infrastructure
-2. 🎓 **Recent Events and Talks**: Organized by the Academy of Technology.
+2. 🎓 **Recent Events and Talks**: Organized by the GKM CET.
 3. 📰 **Latest News**: Updates on institute happenings.
 4. 🔗 **Navigation Tabs**: Quickly jump to the main sections of the page.
 5. 📝 **Job Application Form**: Located at the end of the page.
@@ -46,13 +46,12 @@
 
 ---
 
-## 🔥 Team PHOENIX
+## 🔥 Team Developer
 
 ### Team Members:
-1. Tanmoy Chanda
-2. Debayan Das
-3. Hrishikesh Mandal
-4. Dip Bhattacharyya
+1. Yuvaraj L
+2. Jeeva Kumar S
+
 
 ---
 
