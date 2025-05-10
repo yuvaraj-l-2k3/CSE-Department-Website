@@ -86,11 +86,11 @@ events.forEach((event) => {
 
 const announcements = [
     "Stay tuned for upcoming events and promotions.",
-    "Career Services is hosting a resume workshop on March 20th to help you prepare for job hunting.",
+    "Announce available scholarships, eligibility criteria, and application deadlines.",
     "Join our environmental club and help make our campus more sustainable.",
     "Need tutoring assistance? Visit the Student Learning Center for free tutoring services in various subjects.",
-    "The campus gym will have extended hours during finals week to accommodate student schedules.",
-    "The library will be closed for renovations from June 1st to June 15th."
+    "Inform students about new books, digital resources, or extended library hours.",
+    "Provide updates on holidays, special closures, or emergency announcements."
 ];
 
 const announcementContainer = document.getElementById('announcementContainer');
@@ -332,7 +332,7 @@ document.getElementById('loginButton').addEventListener('click', function() {
     const enteredCaptcha = captchaInput.value;
     const expectedCaptcha = captchaContainer.textContent.split(':')[1].trim();
     
-    if (enteredPassword === 'admin' && enteredCaptcha === expectedCaptcha) {
+    if (enteredPassword === 'admin@GKM' && enteredCaptcha === expectedCaptcha) {
         // Store logged-in state in localStorage
         localStorage.setItem('isAdminLoggedIn', 'true');
 
