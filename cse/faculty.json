@@ -7,23 +7,31 @@
         "email": "csestaff21@gmail.com"
     },
     {
-        "name": "Faculty Name 2",
+        "name": "Dayana T ",
         "areaOfTeaching": "Area of Teaching",
-        "subject": "Subject 2",
+        "subject": "BDA, NS, ST,C,Java,SQL",
         "image": "faculty2.jpg",
-        "email": "faculty2.title@aot.edu.in"
+        "email": "csestaff16@gkmcet.net.in"
     },
     {
-        "name": "Faculty Name 3",
+        "name": "NANCY JOY S",
         "areaOfTeaching": "Area of Teaching",
-        "subject": "Subject 3",
+        "subject": "CN,DBMS,IOT,Python",
         "image": "faculty3.jpg",
-        "email": "faculty3.title@aot.edu.in"
+        "email": "csestaff24@gmail.com"
     },
+    
     {
         "name": "Faculty Name 4",
         "areaOfTeaching": "Area of Teaching",
         "subject": "Subject 4",
+        "image": "faculty4.jpg",
+        "email": "faculty4.title@aot.edu.in"
+    },
+    {
+        "name": "Faculty Name 5",
+        "areaOfTeaching": "Area of Teaching",
+        "subject": "Subject 5",
         "image": "faculty4.jpg",
         "email": "faculty4.title@aot.edu.in"
     }
