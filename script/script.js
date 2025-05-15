@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to toggle the dropdown menu visibility
 function toggleDropdown(id) {
-    var dropdown = document.getElementById("mobile-dropdown-" + id);
-    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "flex";
-}
+            var dropdown = document.getElementById("mobile-dropdown-" + id);
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
 
 // Function to toggle the visibility of sub-dropdowns
 function toggleSubDropdown(parentId) {
@@ -41,7 +41,7 @@ function toggleSubDropdown(parentId) {
 }
   
 // Array of event data
-const events = [
+var events = [
     {
         time: "7:00 PM, April 24th",
         description: "Connect with employers looking to hire students for internships and full-time positions. Bring your resume!"
@@ -119,6 +119,8 @@ function populateAnnouncements() {
 // Call function to populate announcements on page load
 populateAnnouncements();
   
+
+
   //JS Function to show incremental animation for number of faculties,students & staffs
   document.addEventListener('DOMContentLoaded', function() {
     const studentsCountElement = document.getElementById('studentsCount');
@@ -391,6 +393,8 @@ document.getElementById('logoutButton').addEventListener('click', function() {
       alert('Announcements saved successfully!');
   });
 
+  
+
 //Read More Button
 function toggleReadMore() {
     const readAbout = document.getElementById('read-about');
@@ -404,6 +408,9 @@ function toggleReadMore() {
         readMoreBtn.textContent = 'Read More';
     }
 }
+
+
+
 // Typing animation logic
 document.addEventListener('DOMContentLoaded', function() {
     const typingTextElement = document.getElementById('typing-text');
@@ -437,6 +444,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(typeText, delayBetweenTexts);
 });
+
+
+
 
 // Search functionality
 async function performSearch() {
@@ -486,8 +496,6 @@ function isValidURL(string) {
 function closeSearchPopup() {
     document.getElementById('searchPopup').style.display = 'none';
 }
-
-
 
 // Sending Message
 

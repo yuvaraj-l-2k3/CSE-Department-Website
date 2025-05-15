@@ -1389,6 +1389,27 @@ footer{
     color: var(--primary-color);
 }
 
+.w-top{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.w-top i{
+    color:white;
+    background-color:var(--primary-color);
+    font-size: 22px;
+    padding:8px;
+    border-radius:50%;
+    
+}
+
+.w-top i:hover{
+    background-color: var(--hover-imp);
+}
+
+
 
 @media (max-width:1600px){
     .logo{
@@ -1725,6 +1746,13 @@ footer{
     .faq .faq-content p {
         margin: 1em 0;
     }
+
+    /* moblie view */
+   
+
+ 
+
+
 }
 @media (max-width:450px){
     .search-content{
@@ -1797,6 +1825,8 @@ footer{
         padding-bottom: 5px;
 
     }
+
+    
 }
 
 
