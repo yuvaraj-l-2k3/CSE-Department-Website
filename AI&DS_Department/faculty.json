@@ -22,17 +22,17 @@
     },
     
     {
-        "name": "Faculty Name 4",
+        "name": "Surya R",
         "areaOfTeaching": "Area of Teaching",
-        "subject": "Subject 4",
+        "subject": "C lab",
         "image": "faculty4.jpg",
-        "email": "faculty4.title@aot.edu.in"
+        "email": "csestaff27@gmail.com"
     },
     {
-        "name": "Faculty Name 5",
+        "name": "Indumathy U",
         "areaOfTeaching": "Area of Teaching",
-        "subject": "Subject 5",
-        "image": "faculty4.jpg",
-        "email": "faculty4.title@aot.edu.in"
+        "subject": "Operating System",
+        "image": "faculty5.jpg",
+        "email": "csestaff30@gmail.com"
     }
 ]

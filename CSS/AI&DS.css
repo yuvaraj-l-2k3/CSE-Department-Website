@@ -1,0 +1,373 @@
+.features{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+}
+.feature{
+    padding: 1.4rem;
+    color: var(--primary-color);
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    border-radius: 8px;
+    background-color: rgb(224, 238, 252);
+    border: 0.2px solid var(--bg-color-ligt);
+    width: 30%;
+    max-width: 350px;
+    margin: 1.3rem;
+}
+div{
+    transition: opacity 1.2s ease; /* Apply transition effect to opacity property */
+    transition: all ease 1.2s;
+}
+/* CSS animation to gradually fade in the .feature elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to .feature elements */
+div .animate {
+    animation: fadeIn 1.2s ease forwards; /* Run the fadeIn animation once */
+}
+.feature.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all ease 1.2s;
+}
+.feature.active i{
+    color: #fff;
+}
+.hidden {
+    display: none;
+}
+.features i{
+    color: var(--primary-color);
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-right: 1.2rem;
+}
+.hod{
+    width: 90%;
+    max-width: 1050px;
+    margin: 4rem auto;
+}
+.hod-details{
+    display: flex;
+    background-color: var(--bg-color-ligt);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px var(--bg-color-dark);
+}
+.hodimage{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hodimage img{
+    margin: auto auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.hod-content{
+    width: 70%;
+}
+.cs-events{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 3rem auto;
+    max-width: 1200px;
+    margin-bottom: 8rem;
+}
+.latest-banner{
+    display: flex;
+    justify-content: center;
+    margin-right: 0.3rem;
+}
+.latest-banner img{
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px var(--bg-color-ligt);
+    height: 600px;
+    width: 500px;
+}
+.cs-news-data{
+    width: 100%;
+    height: 600px;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: var(--bg-color-ligt);
+}
+.cs-news{
+    display: flex;
+    background-color: var(--bg-color-dark);
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 500;
+    font-size: medium;
+    margin: 12px 0;
+}
+.cs-news i{
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 8px 12px 4px 4px;
+    color: var(--primary-color);
+}
+.talks{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+.talk{
+    display: flex;
+    margin: 2rem;
+    background-color: var(--bg-color-ligt);
+    padding: 12px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px;
+    height: 100px;
+    align-items: center;
+}
+.talk-date-time{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 6px;
+    padding: 16px 10px;
+    position: absolute;
+}
+.dash{
+    content: '';
+    height: 10px;
+    background-color: var(--c) !important;
+    display: block;
+}
+.talks .talk .talk-date-time h4 {
+    color: var(--c) !important;
+}
+.talks .talk .talk-date-time h5 {
+    color: var(--c) !important;
+}
+.talk-data{
+    display: flex;
+}
+.talk-data h5{
+    color: var(--text) !important;
+}
+.about{
+    width: 70%;
+    display: grid;
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    text-align: justify;
+    font-weight: 400;
+}
+.dept-image{
+    height: 480px;
+}
+.dept-image img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.about p{
+    margin: 1.3rem auto;
+}
+.f3{
+    width: 80%;
+    margin: 4rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.lab-info{
+    width: 80%;
+    border-collapse: collapse;
+    font-size: large;
+    margin: 0 auto;
+}
+.lab-info table{
+    border: 1px solid var(--text);
+}
+.lab-info td{
+    border: 1px solid var(--text);
+    padding: 8px;
+}
+.lab-info th {
+    border: 1px solid var(--text);
+    background-color: var(--blue);
+    color: var(--light);
+}
+.lab-info tr:nth-child(even) td {
+    background-color: var(--bg-color-ligt);
+}
+.overview{
+    margin: 4rem auto;
+    text-align: center;
+}
+.f2 .hod{
+    width: 90% !important;
+    max-width: 90% !important;
+}
+.faculties{
+    width: 90%;
+    margin: 2.6rem auto;
+}
+.faculty-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.faculty{
+    width: 30%;
+    max-width: 350px;
+    min-width: 300px;
+    background-color: var(--bg-color-ligt);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+}
+.faculty-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+hr{
+    opacity: 1 !important;
+}
+@media (max-width : 1048px){
+    .cs-events{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 600px;
+    }
+    .latest-banner{
+        width: 100%;
+        margin-bottom: 1.3rem;
+    }
+    .latest-banner img{
+        width: 600px;
+    }
+}
+.career{
+    background-color: var(--bg-color-ligt);
+    margin: 3.1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+@media (max-width:950px){
+    .hod-details{
+        flex-direction: column;
+    }
+    .hodimage{
+        width: 100%;
+    }
+    .hod-content{
+        width: 100%;
+    }
+    .hod-content h4{
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    .feature{
+        width: 250px !important;
+        margin: 0.5rem;
+        padding: 0.6rem;
+    }
+    .feature i{
+        font-size: 25px;
+    }
+    .feature h5{
+        font-size: 16px;
+    }
+}
+@media (max-width:750px){
+    .talk{
+        width: 70%;
+    }
+    .latest-banner img{
+        transform: scale(0.8);
+    }
+    .about{
+        width: 96%;
+    }
+    .career{
+        flex-direction: column;
+    }
+}
+@media (max-width:550px){
+    #read-about{
+        display: none;
+    }
+    .read-more-btn {
+        display: inline !important;
+    }
+    .feature{
+        flex-grow: calc(-3);
+    }
+    .latest-banner img{
+        transform: scale(0.7);
+    }
+    .features{
+        flex-wrap: wrap;
+    }
+    .feature{
+        width: 60%;
+    }
+}
+@media (max-width:450px){
+    .cs-events{
+        width: 98%;
+    }
+    .cs-news p{
+        font-size: small;
+    }
+    .dept-image{
+        width: 250px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .talk{
+        width: 98%;
+    }
+    .latest-banner{
+        margin-bottom: 0.5rem;
+        transform: scale(0.75);
+    }
+    .career{
+        text-align: center;
+    }
+}
