@@ -499,20 +499,38 @@ function closeSearchPopup() {
 
 // Sending Message
 
-document.getElementById('contact-form-45').addEventListener('submit', function(e) {
-    e.preventDefault();
+// document.getElementById('contact-form-45').addEventListener('submit', function(e) {
+//     e.preventDefault();
     
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var number=document.getElementById('number').value;
-    var message = document.getElementById('message').value;
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var number=document.getElementById('number').value;
+//     var message = document.getElementById('message').value;
     
-    var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
-    var subject = 'Feedback from ' + name;
-    var body = 'Name: ' + name +"\n" ;
-    body += 'Email: ' + email + "\n";   
-    body += 'Number: ' + number + "\n";   
-    body += 'Message:\r\n' + message;
+//     var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
+//     var subject = 'Feedback from ' + name;
+//     var body = 'Name: ' + name +"\n" ;
+//     body += 'Email: ' + email + "\n";   
+//     body += 'Number: ' + number + "\n";   
+//     body += 'Message:\r\n' + message;
     
-    window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
+//     window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+// });
+
+ document.getElementById('contact-form-45').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var number=document.getElementById('number').value;
+        var message = document.getElementById('message').value;
+        
+        var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
+        var subject = 'Feedback from ' + name;
+        var body = 'Name: ' + name +"\n" ;
+        body += 'Email: ' + email + "\n";   
+        body += 'Number: ' + number + "\n";   
+        body += 'Message:\r\n' + message;
+        
+        window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
