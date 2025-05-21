@@ -502,16 +502,20 @@ function closeSearchPopup() {
 document.getElementById('contact-form-45').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    var name = encodeURIComponent(document.getElementById('name').value);
-    var email = encodeURIComponent(document.getElementById('email').value);
-    var number = encodeURIComponent(document.getElementById('number').value);
-    var message = encodeURIComponent(document.getElementById('message').value);
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var number = document.getElementById('number').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    // Basic validation
+    if (!name || !number || !message) {
+        alert("Please fill in all required fields (Name, Phone Number, and Message).");
+        return;
+    }
 
     var receiver = 'yuvarajl2025@gmail.com'; // Replace with actual receiver's email
     var subject = encodeURIComponent('Feedback from ' + name);
-    var body = `Name: ${name}%0AEmail: ${email}%0ANumber: ${number}%0AMessage:%0A${message}`;
+    var body = `Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email || 'Not Provided')}%0ANumber: ${encodeURIComponent(number)}%0AMessage:%0A${encodeURIComponent(message)}`;
 
     window.location.href = `mailto:${receiver}?subject=${subject}&body=${body}`;
 });
-
- 
