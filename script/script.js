@@ -497,22 +497,22 @@ function closeSearchPopup() {
     document.getElementById('searchPopup').style.display = 'none';
 }
 
-// Sending Message
+//message send to mail
 
-    document.getElementById('contact-form-45').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var number=document.getElementById('number').value;
-        var message = document.getElementById('message').value;
-        
-        var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
-        var subject = 'Feedback from ' + name;
-        var body = 'Name: ' + name +"\n" ;
-        body += 'Email: ' + email + "\n";   
-        body += 'Number: ' + number + "\n";   
-        body += 'Message:\r\n' + message;
-        
-        window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    });
+function sendMail() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('number').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !phone || !message) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    const subject = `New Contact Form Submission`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+    const mailtoLink = `mailto:yuvarajl2025@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    window.location.href = mailtoLink;
+}

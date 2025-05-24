@@ -588,7 +588,7 @@
     <div class="comment-form" id="contact-us-section">
             <h2 class="text-center p-2">Have A Question? Leave Your Doubt Here</h2>
 
-        <form id="contact-form-45">
+        <!-- <form id="contact-form-45">
             <div class="rotating-border">
                 <div class="contact-form">
                     <div id="input-field">
@@ -611,17 +611,47 @@
                         <textarea id="message" required></textarea>
                     </div>
 
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="button" class="submit">Submit</button>
                 </div>
             </div>
-        </form>
-        
+        </form> -->
+
+        <form id="contact-form-45">
+    <div class="rotating-border">
+        <div class="contact-form">
+            <div id="input-field">
+                <label for="firstmame"> Name<span style="color: #ff0000; font-size: medium;">*</span></label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div id="input-field">
+                <label for="email">Email (Optional)</label>
+                <input type="email" id="email">
+            </div>
+
+            <div id="input-field">
+                <label for="phone">Phone Number<span style="color: #ff0000; font-size: medium;">*</span></label>
+                <input type="tel" id="number" required>
+            </div>
+
+            <div class="message" id="input-field">
+                <label for="user-message">Write your Message<span style="color: #ff0000; font-size: medium;">*</span></label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button type="button" class="submit" onclick="sendMail()">Submit</button>
+        </div>
+    </div>
+</form>
+
+       
     </div>
     <canvas id="particleCanvas"></canvas>
     <div class="overlay"></div>
     <script src="./script/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const homeLink = document.getElementById('home-link');
