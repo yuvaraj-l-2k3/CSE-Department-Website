@@ -533,5 +533,5 @@ function closeSearchPopup() {
       `Name: ${name}\nEmail: ${email || 'Not provided'}\nPhone: ${phone}\nMessage: ${message}`
     );
 
-    window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:yuvarajl2025@gmail.com?subject=${subject}&body=${body}`;
   }
