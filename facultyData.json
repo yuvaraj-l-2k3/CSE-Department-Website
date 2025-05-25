@@ -1,0 +1,23 @@
+[
+    {"Name": "Dr. Sujatha Balasubramanian ", "Designation": "C.E.O", "Highest Qualification": "M.B.A, Ph.D", "Experience": "18 yrs 10 mts"},
+    {"Name": "Dr N.S.Bhuvaneswari", "Designation": "Principal", "Highest Qualification": "B.E, M.E, Ph.D", "Experience": "8 yrs"},
+    {"Name": "Mr.M.Babu", "Designation": "Vice Principal", "Highest Qualification": "Ph.D", "Experience": "19 yrs 2 mts"},
+    {"Name": "Prof. Indumathy U", "Designation": "Associate Professor", "Highest Qualification": "M.E", "Experience": "1 yrs"},
+    {"Name": "Prof.Manju R", "Designation": "Professor", "Highest Qualification": "B.E, M.E (Ph.d)", "Experience": "4 yrs"},
+    {"Name": "Prof.Nancy Joy S", "Designation": "Associate Professor", "Highest Qualification": "M.E", "Experience": "2 yrs"},
+    {"Name": "Prof.Surya R", "Designation": "Associate Professor", "Highest Qualification": "M.E", "Experience": "1 yrs"},
+    {"Name": "Prof.Dayana", "Designation": "Professor", "Highest Qualification": "B.E, M.E ,(Ph.d)", "Experience": "4 yrs "},
+    {"Name": "Sirshendu Saha", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "16 yrs"},
+    {"Name": "Sandip Saha Chowdhury", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "22 yrs"},
+    {"Name": "Hiranmoy Mondal", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "17 yrs 3 mts"},
+    {"Name": "Srinjoy Bid", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "20 yrs"},
+    {"Name": "Abhijit Mallick", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "21 yrs 5 mts"},
+    {"Name": "Biswaranjan Das", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "18 yrs 8 mts"},
+    {"Name": "Baishakhi Bhattacharya", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "14 yrs 9 mts"},
+    {"Name": "Subhra Chatterjee", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "14 yrs 8 mts"},
+    {"Name": "Poulomi Deb Roy Chowdhury", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "17 yrs 8 mts"},
+    {"Name": "Sourav Kayal", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "10 yrs 9 mts"},
+    {"Name": "Asish Mohan", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "14 yrs"},
+    {"Name": "Jhumpa De", "Designation": "Associate Professor", "Highest Qualification": "Ph.D", "Experience": "15 yrs 9 mts"},
+    {"Name": "Soumali Roy", "Designation": "Assistant Professor", "Highest Qualification": "M.Tech", "Experience": "5 yrs"}
+]

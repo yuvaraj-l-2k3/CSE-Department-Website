@@ -414,7 +414,7 @@ function toggleReadMore() {
 // Typing animation logic
 document.addEventListener('DOMContentLoaded', function() {
     const typingTextElement = document.getElementById('typing-text');
-    const texts = ["keywords", "Quick Links", "Faculty Name", "Faculty Age"];
+    const texts = ["keywords", "Faculty Name", "Faculty Designation","Faculty Experience"];
     let textIndex = 0;
     let charIndex = 0;
     const typingSpeed = 100;
@@ -446,16 +446,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 // Search functionality
+
 async function performSearch() {
     const searchInput = document.getElementById('searchInput').value.trim();
     const searchResults = document.getElementById('searchResults');
     searchResults.innerHTML = '';
 
     if (searchInput === '') {
-        searchResults.innerHTML = 'Please enter a search term.';
+        searchResults.textContent = 'Please enter a search term.';
         return;
     }
 
@@ -466,21 +465,32 @@ async function performSearch() {
     }
 
     try {
-        const response = await fetch('..Json\facultyData.json');
+        const response = await fetch('./facultyData.json'); // fixed typo
         const data = await response.json();
-        const results = data.filter(item => Object.values(item).some(value => value.toLowerCase().includes(searchInput.toLowerCase())));
+
+        const results = data.filter(item =>
+            Object.values(item).some(value =>
+                typeof value === 'string' && value.toLowerCase().includes(searchInput.toLowerCase())
+            )
+        );
 
         if (results.length > 0) {
             results.forEach(result => {
                 const resultItem = document.createElement('div');
-                resultItem.innerHTML = `<strong>${result.Name}</strong><br>${result.Designation}<br>${result["Highest Qualification"]}<br>${result.Experience}`;
+                resultItem.innerHTML = `
+                    <strong>${escapeHTML(result.Name)}</strong><br>
+                    ${escapeHTML(result.Designation)}<br>
+                    ${escapeHTML(result["Highest Qualification"])}<br>
+                    ${escapeHTML(result.Experience)}
+                `;
                 searchResults.appendChild(resultItem);
             });
         } else {
-            searchResults.innerHTML = 'Results Not Found';
+            searchResults.textContent = 'Results Not Found';
         }
     } catch (error) {
-        searchResults.innerHTML = 'Error fetching data';
+        console.error('Error fetching or parsing data:', error);
+        searchResults.textContent = 'An error occurred while fetching data.';
     }
 }
 
@@ -492,6 +502,19 @@ function isValidURL(string) {
         return false;
     }
 }
+
+// Escapes HTML to prevent XSS
+function escapeHTML(str) {
+    return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
+
 
 function closeSearchPopup() {
     document.getElementById('searchPopup').style.display = 'none';
