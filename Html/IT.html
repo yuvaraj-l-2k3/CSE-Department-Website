@@ -55,7 +55,7 @@
         </div>
         <div class="search-popup" id="searchPopup">
             <button class="close-button" onclick="closeSearchPopup()"><i class="fa-solid fa-xmark"></i></button>
-            <h1 style="color: var(--c); height: 60px;">Type <span id="typing-text"></span> to Search</h1>
+            <h1 style="color: var(--c); height: 60px;padding-bottom: 20px;">Type <span id="typing-text"></span> to Search</h1>
             <div class="search-content">
                 <input type="text" id="searchInput" placeholder="Search...">
                 <button onclick="performSearch()">Search</button>
@@ -463,7 +463,7 @@
         // Typing animation logic
 document.addEventListener('DOMContentLoaded', function() {
     const typingTextElement = document.getElementById('typing-text');
-    const texts = ["keywords", "Quick Links", "Faculty Name", "Faculty Age"];
+    const texts = ["keywords", "Faculty Name", "Faculty Designation","Faculty Experience"];
     let textIndex = 0;
     let charIndex = 0;
     const typingSpeed = 100;
