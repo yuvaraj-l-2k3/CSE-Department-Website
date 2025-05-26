@@ -1747,6 +1747,9 @@ footer{
         margin: 1em 0;
     }
 
+    .search-content input{
+        width: 400px;
+    }
     /* moblie view */
    
 
@@ -1756,7 +1759,10 @@ footer{
 }
 @media (max-width:450px){
     .search-content{
-        max-width: 290px;
+        max-width: 350px;
+    }
+    .search-content input{
+        width:100%;
     }
     .director-message{
         flex-direction: column;
@@ -1829,5 +1835,9 @@ footer{
     
 }
 
-
+@media (max-width:350px){
+    .search-content {
+        width: 250px;
+    }
+}
 
