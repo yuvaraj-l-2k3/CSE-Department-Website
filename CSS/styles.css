@@ -1837,6 +1837,7 @@ footer{
 
 @media (max-width:350px){
     .search-content {
+        padding-top: 20px;
         width: 250px;
     }
 }
